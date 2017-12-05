@@ -144,16 +144,12 @@ footer .row{
 
 
 /************** Styles for smaller width mobiles **************/
-@media only screen and (max-width:320px){
+@media only screen and (max-width:319px){
     body{
         padding: 0 2px;
-    }
-    .row{
-        padding: 0;
+        border: 2px solid red;
     }
     .col-6,.col-4,.col-8,.col-1{
-        width: 100%;
-        overflow: hidden;
         padding: 5px 10px;
     }
     h1{
@@ -161,7 +157,6 @@ footer .row{
     }
     p{
         font-size: 14px;
-        text-align: justify;
     }
     hr{
         margin: 0 auto;
@@ -222,14 +217,6 @@ footer .row{
 /************** Styles for mobiles **************/
 
 @media only screen and (min-width:320px) and (max-width:480px){
-    .row{
-        padding: 0;
-    }
-    .col-6,.col-4,.col-8,.col-1{
-        width: 100%;
-        overflow: hidden;
-        padding: 20px;
-    }
     h1{
         font-size: 37.5px;
     }
@@ -287,18 +274,9 @@ footer .row{
 
 /************** Styles for landscape mobiles **************/
 
-@media only screen and (min-width:480px) and (max-width:768px){
-    .row{
-        padding: 0;
-    }
-    .col-6,.col-4,.col-8,.col-1{
-        width: 100%;
-        overflow: hidden;
-        padding: 20px;
-    }
+@media only screen and (min-width:481px) and (max-width:767px){
     h1{
         font-size: 40px;
-        font-weight: 900;
     }
     .small{
         width: 100%;
@@ -353,20 +331,11 @@ footer .row{
 /************** Styles for tablets **************/
 
 @media only screen and (min-width:768px) and (max-width:1024px){
-    .row{
-        padding: 0;
-        margin: 0;
-    }
     .col-6,.col-4,.col-8,.col-1{
         width: 80%;
-        overflow: hidden;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
     }
     h1{
         font-size: 45px;
-        font-weight: 900;
     }
     .small{
         width: 100%;
@@ -413,5 +382,20 @@ footer .row{
     }
     footer .row .col-6{
         padding: 0;
+    }
+}
+
+/************** Default responsive styles **************/
+@media only screen and (max-width:1024px){
+    .row{
+        padding: 0;
+        margin: 0;
+    }
+    .col-6,.col-4,.col-8,.col-1{
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
