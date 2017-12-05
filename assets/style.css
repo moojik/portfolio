@@ -51,6 +51,7 @@ p{
     font-weight:500;
     line-height:1.5;
     font-family: ProximaNova-Regular,sans-serif;
+    font-size: 16px;
 }
 a{
     text-decoration: none;
@@ -70,8 +71,7 @@ hr{
 }
 img{
     width: 100%;
-    opacity: 9;
-    max-width: 369px;
+    max-width: 350px;
 }
 .project-info h1{
     margin-top: 0;
@@ -143,21 +143,151 @@ footer .row{
 }
 
 
-/************** Responsive Styles **************/
-@media only screen and (min-width:320px) and (max-width:480px){
-    .regular{
-        width: 80%;
+/************** Styles for smaller width mobiles **************/
+@media only screen and (max-width:320px){
+    body{
+        padding: 0 2px;
     }
-    .contact-link a p{
-        display: none;
+    .row{
+        padding: 0;
+    }
+    .col-6,.col-4,.col-8,.col-1{
+        width: 100%;
+        overflow: hidden;
+        padding: 5px 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    hr{
+        margin: 0 auto;
+        padding: 0;
     }
     .small{
+        width: 100%;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
     }
+    .col-8 div{
+        padding: 0;
+    }
+    .project-info h1{
+        font-size: 22.5px;
+    }
+    img{
+        width: 100%;
+        max-width: 300px;
+    }
+    .small-hr{
+        margin: 5px auto;
+    }
+    .regular{
+        width: 100%;
+        margin: auto;
+        padding: 0 2%;
+    }
+    .col-1{
+        padding: 0;
+        margin: 0 2px
+    }
+    .col-1 div{
+        margin: 0; 
+        padding: 0;
+    }
+    .contact-link {
+        margin: 0;
+        padding: 0;
+        height: 80px;
+    }
+    .contact-link a h1{
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+    }
+    .contact-link a p{
+        line-height: 1;
+        font-size: 12px;
+    }
+    footer .row .col-6{
+        padding: 0;
+    }
 }
-@media only screen and (min-width:320px) and (max-width:680px){
+
+/************** Styles for mobiles **************/
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .row{
+        padding: 0;
+    }
+    .col-6,.col-4,.col-8,.col-1{
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+    }
+    h1{
+        font-size: 37.5px;
+    }
+    .small{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .col-8 div{
+        padding: 0;
+    }
+    .project-info h1{
+        font-size: 27.5px;
+    }
+    img{
+        width: 90%;
+        max-width: 300px;
+    }
+    .small-hr{
+        margin: 20px auto;
+    }
+    .regular{
+        width: 100%;
+        margin: auto;
+        padding: 0 4%;
+    }
+    .col-1{
+        padding: 0;
+        margin: 0 2px
+    }
+    .col-1 div{
+        margin: 0; 
+        padding: 0;
+    }
+    .contact-link {
+        margin: 0;
+        padding: 0;
+        height: 80px;
+    }
+    .contact-link a h1{
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+    }
+    .contact-link a p{
+        line-height: 1;
+        font-size: 14px;
+    }
+    footer .row .col-6{
+        padding: 0;
+    }
+}
+
+/************** Styles for landscape mobiles **************/
+
+@media only screen and (min-width:480px) and (max-width:768px){
     .row{
         padding: 0;
     }
@@ -179,18 +309,19 @@ footer .row{
         padding: 0;
     }
     .project-info h1{
-        font-size: 25px;
+        font-size: 30px;
     }
     img{
         width: 90%;
-        max-width: 369px;
+        max-width: 350px;
     }
     .small-hr{
         margin: 20px auto;
     }
     .regular{
-        width: 90%;
+        width: 100%;
         margin: auto;
+        padding: 0 10%;
     }
     .col-1{
         padding: 0;
@@ -218,6 +349,9 @@ footer .row{
     }
     
 }
+
+/************** Styles for tablets **************/
+
 @media only screen and (min-width:768px) and (max-width:1024px){
     .row{
         padding: 0;
@@ -231,7 +365,7 @@ footer .row{
         margin-right: auto;
     }
     h1{
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 900;
     }
     .small{
@@ -243,11 +377,11 @@ footer .row{
         padding: 0;
     }
     .project-info h1{
-        font-size: 30px;
+        font-size: 32.5px;
     }
     img{
         width: 90%;
-        max-width: 369px;
+        max-width: 380px;
     }
     .small-hr{
         margin: 20px auto;
