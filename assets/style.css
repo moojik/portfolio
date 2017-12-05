@@ -6,6 +6,7 @@
 *{
     box-sizing:border-box;
     text-align:center;
+    overflow: none;
 }
 body{
     margin:0;
@@ -143,249 +144,8 @@ footer .row{
 }
 
 
-/************** Styles for smaller width mobiles **************/
-@media only screen and (max-width:319px){
-    body{
-        padding: 0 2px;
-        border: 2px solid red;
-    }
-    .col-6,.col-4,.col-8,.col-1{
-        padding: 5px 10px;
-    }
-    h1{
-        font-size: 30px;
-    }
-    p{
-        font-size: 14px;
-    }
-    hr{
-        margin: 0 auto;
-        padding: 0;
-    }
-    .small{
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .col-8 div{
-        padding: 0;
-    }
-    .project-info h1{
-        font-size: 22.5px;
-    }
-    img{
-        width: 100%;
-        max-width: 300px;
-    }
-    .small-hr{
-        margin: 5px auto;
-    }
-    .regular{
-        width: 100%;
-        margin: auto;
-        padding: 0 2%;
-    }
-    .col-1{
-        padding: 0;
-        margin: 0 2px
-    }
-    .col-1 div{
-        margin: 0; 
-        padding: 0;
-    }
-    .contact-link {
-        margin: 0;
-        padding: 0;
-        height: 80px;
-    }
-    .contact-link a h1{
-        padding: 0;
-        margin: 0;
-        font-size: 30px;
-    }
-    .contact-link a p{
-        line-height: 1;
-        font-size: 12px;
-    }
-    footer .row .col-6{
-        padding: 0;
-    }
-}
-
-/************** Styles for mobiles **************/
-
-@media only screen and (min-width:320px) and (max-width:480px){
-    h1{
-        font-size: 37.5px;
-    }
-    .small{
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .col-8 div{
-        padding: 0;
-    }
-    .project-info h1{
-        font-size: 27.5px;
-    }
-    img{
-        width: 90%;
-        max-width: 300px;
-    }
-    .small-hr{
-        margin: 20px auto;
-    }
-    .regular{
-        width: 100%;
-        margin: auto;
-        padding: 0 4%;
-    }
-    .col-1{
-        padding: 0;
-        margin: 0 2px
-    }
-    .col-1 div{
-        margin: 0; 
-        padding: 0;
-    }
-    .contact-link {
-        margin: 0;
-        padding: 0;
-        height: 80px;
-    }
-    .contact-link a h1{
-        padding: 0;
-        margin: 0;
-        font-size: 30px;
-    }
-    .contact-link a p{
-        line-height: 1;
-        font-size: 14px;
-    }
-    footer .row .col-6{
-        padding: 0;
-    }
-}
-
-/************** Styles for landscape mobiles **************/
-
-@media only screen and (min-width:481px) and (max-width:767px){
-    h1{
-        font-size: 40px;
-    }
-    .small{
-        width: 100%;
-        margin: auto;
-        display: grid;
-    }
-    .col-8 div{
-        padding: 0;
-    }
-    .project-info h1{
-        font-size: 30px;
-    }
-    img{
-        width: 90%;
-        max-width: 350px;
-    }
-    .small-hr{
-        margin: 20px auto;
-    }
-    .regular{
-        width: 100%;
-        margin: auto;
-        padding: 0 10%;
-    }
-    .col-1{
-        padding: 0;
-        margin: 0 2px
-    }
-    .col-1 div{
-        margin: 0; 
-        padding: 0;
-    }
-    .contact-link {
-        margin: 0;
-        padding: 0;
-        height: 80px;
-    }
-    .contact-link a h1{
-        padding: 0;
-        margin: 0;
-        font-size: 30px;
-    }
-    .contact-link a p{
-        line-height: 1;
-    }
-    footer .row .col-6{
-        padding: 0;
-    }
-    
-}
-
-/************** Styles for tablets **************/
-
-@media only screen and (min-width:768px) and (max-width:1024px){
-    .col-6,.col-4,.col-8,.col-1{
-        width: 80%;
-    }
-    h1{
-        font-size: 45px;
-    }
-    .small{
-        width: 100%;
-        margin: auto;
-        display: grid;
-    }
-    .col-8 div{
-        padding: 0;
-    }
-    .project-info h1{
-        font-size: 32.5px;
-    }
-    img{
-        width: 90%;
-        max-width: 380px;
-    }
-    .small-hr{
-        margin: 20px auto;
-    }
-    .regular{
-        width: 100%;
-        margin: auto;
-        padding: 0 10%;
-    }
-    .col-1{
-        padding: 0;
-        margin: 0 2px;
-    }
-    .col-1 div{
-        margin: 0; 
-        padding: 0;
-    }
-    .contact-link {
-        margin: 0;
-        padding: 0;
-    }
-    .contact-link a h1{
-        padding: 0;
-        margin: 0;
-        font-size: 30px;
-    }
-    .contact-link a p{
-        line-height: 1;
-    }
-    footer .row .col-6{
-        padding: 0;
-    }
-}
-
 /************** Default responsive styles **************/
+
 @media only screen and (max-width:1024px){
     .row{
         padding: 0;
@@ -395,7 +155,160 @@ footer .row{
         width: 100%;
         overflow: hidden;
         padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+    }
+    .small{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .col-8 div{
+        padding: 0;
+    }
+    .small-hr{
+        margin: 20px auto;
+    }
+    .col-1{
+        padding: 0;
+        margin: 0 2px
+    }
+    .col-1 div{
+        margin: 0; 
+        padding: 0;
+    }
+    .regular{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    .contact-link {
+        margin: 0;
+        padding: 0;
+    }
+    .contact-link a h1{
+        padding: 0;
+        margin: 0;
+    }
+    .contact-link a p{
+        line-height: 1;
+    }
+    footer .row .col-6{
+        padding: 0;
+    }
+}
+
+
+/************** Styles for smaller width mobiles **************/
+
+@media only screen and (max-width:319px){
+    .container{
+        padding:0;
+    }
+    .col-6,.col-4,.col-8,.col-1{
+        width: 100%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .project-info h1{
+        font-size: 22px;
+    }
+    img{
+        max-width: 250px;
+    }
+    .contact-link{
+        height: 70px;
+    }
+    .contact-link a h1{
+        font-size: 25px;
+    }
+    .contact-link a p{
+        font-size: 13px;
+    }
+}
+
+/************** Styles for mobiles **************/
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .container{
+        padding: 30px 0;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .project-info h1{
+        font-size: 25px;
+    }
+    img{
+        max-width: 280px;
+    }
+    .regular{
+        padding: 0 5%;
+    }
+    .contact-link {
+        height: 60px;
+    }
+    .contact-link a h1{
+        font-size: 27.5px;
+    }
+    .contact-link a p{
+        font-size: 14px;
+    }
+}
+
+/************** Styles for landscape mobiles **************/
+
+@media only screen and (min-width:481px) and (max-width:767px){
+    body{
+        border: 2px solid green;
+    }
+    .col-6,.col-4,.col-8,.col-1{
+        width: 70%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .project-info h1{
+        font-size: 27.5px;
+    }
+    img{
+        max-width: 325px;
+    }
+    .regular{
+        padding: 0 5%;
+    }
+    .contact-link {
+        height: 80px;
+    }
+    .contact-link a h1{
+        font-size: 30px;
+    }
+}
+
+/************** Styles for tablets **************/
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .col-6,.col-4,.col-8,.col-1{
+        width: 70%;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .project-info h1{
+        font-size: 32.5px;
+    }
+    img{
+        max-width: 350px;
+    }
+    .regular{
+        padding: 0 15%;
+    }
+    .contact-link a h1{
+        font-size: 32.5px;
     }
 }
