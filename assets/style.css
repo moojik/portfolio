@@ -5,7 +5,6 @@
 
 *{
     box-sizing:border-box;
-    text-align:center;
     overflow: none;
 }
 body{
@@ -44,6 +43,7 @@ h1{
     text-transform:uppercase;
     font-weight:900;
     font-family: sans-serif;
+    text-align:center;
 }
 span{
   background:coral;
@@ -53,6 +53,7 @@ p{
     line-height:1.5;
     font-family: ProximaNova-Regular,sans-serif;
     font-size: 16px;
+    text-align: left;
 }
 a{
     text-decoration: none;
@@ -101,6 +102,7 @@ img{
 }
 .col-1 div p{
     margin: 0;
+    text-align: center;
 }
 .right{
     margin-right: 0;  
@@ -136,6 +138,9 @@ img{
 footer .row{
     background: coral;
     padding: 0;
+}
+footer .row p{
+    text-align: center;
 }
 .white-bg{
     background: black;
@@ -235,11 +240,25 @@ footer .row{
 /************** Styles for mobiles **************/
 
 @media only screen and (min-width:320px) and (max-width:480px){
+    body{
+        background: linear-gradient( 0deg, rgba(0,0,0,.4),rgba(0,0,0,.4)), url(lidow_201712616428270.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-shadow: 0 0 2px rgba(0,0,0,0.4);
+    }
     .container{
         padding: 30px 0;
     }
     h1{
         font-size: 35px;
+    }
+    a{
+        color: white;
+    }
+    hr{
+        border-color: white;
     }
     .project-info h1{
         font-size: 25px;
@@ -256,22 +275,31 @@ footer .row{
     .contact-link a h1{
         font-size: 27.5px;
     }
-    .contact-link a p{
-        font-size: 14px;
-    }
 }
 
 /************** Styles for landscape mobiles **************/
 
 @media only screen and (min-width:481px) and (max-width:767px){
     body{
-        border: 2px solid green;
+        background: linear-gradient( 0deg, rgba(0,0,0,.4),rgba(0,0,0,.4)), url(lidow_201712616428270.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-shadow: 0 0 2px rgba(0,0,0,0.4);
     }
     .col-6,.col-4,.col-8,.col-1{
-        width: 70%;
+        width: 80%;
     }
     h1{
         font-size: 40px;
+    }
+    a{
+        color: white;
+    }
+    hr{
+        border-color: white;
+        width: 50%;
     }
     .project-info h1{
         font-size: 27.5px;
@@ -298,6 +326,9 @@ footer .row{
     }
     h1{
         font-size: 45px;
+    }
+    hr{
+        width: 50%;
     }
     .project-info h1{
         font-size: 32.5px;
